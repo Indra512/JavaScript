@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1>Oprations</h1>
+</head>
+<br>
+
+<body>
+    <input id="val1" />
+    <input id="val2" />
+    <br>
+    <button id="add">Sum</button>
+    <button id="sub">Sub</button>
+    <p id="result"></p>
+</body>
+<script>
+    document.getElementById('add').onclick = add;
+    document.getElementById('sub').onclick = sub;
+    function add() {
+        let value1 = document.getElementById('val1').value;
+        let value2 = document.getElementById('val2').value;
+        let sum = parseInt(value1) + parseInt(value2)
+        document.getElementById('result').innerHTML = sum;
+    }
+    function sub() {
+        let value1 = document.getElementById('val1').value;
+        let value2 = document.getElementById('val2').value;
+        let sum = parseInt(value1) - parseInt(value2)
+        document.getElementById('result').innerHTML = sum;
+    }
+</script>
+
+</html>
